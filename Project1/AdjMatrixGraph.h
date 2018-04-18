@@ -33,8 +33,12 @@ public:
 	//Overrided Move assignment Operator
 	AdjMatrixGraph& operator=(AdjMatrixGraph&& other);
 
+	//Destructor
+	~AdjMatrixGraph();
+
 	// destroyGraph
 	void destroyGraph();
+
 
 private:
 
