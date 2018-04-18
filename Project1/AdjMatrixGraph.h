@@ -21,7 +21,20 @@ public:
 
 	// The Big 5
 
-	// detroyGraph
+	//Overloaded Copy Constructor
+	AdjMatrixGraph(const AdjMatrixGraph& other);
+
+	//Overloaded Move Constructor
+	AdjMatrixGraph(AdjMatrixGraph&& other);
+
+	//Overrided Assignement Operator
+	AdjMatrixGraph& operator=(const AdjMatrixGraph& other);
+
+	//Overrided Move assignment Operator
+	AdjMatrixGraph& operator=(AdjMatrixGraph&& other);
+
+	// destroyGraph
+	void destroyGraph();
 
 private:
 
